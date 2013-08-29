@@ -1,0 +1,20 @@
+.novalue {
+border-color: #FF9A9A;
+}
+
+#confirmation {
+display: none;
+position:relitive;
+margin:auto;
+width:500px;
+height:600px;
+}
+.heading {
+color: blue; 
+text-align: center;
+}
+
+.formstyling {
+color: #54A4FF; 
+font-size: 20px;
+}
