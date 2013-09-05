@@ -9,7 +9,7 @@ var err_email = document.getElementById("err_email");
 var err_messagebox = document.getElementById("err_messagebox");
 var has_errors = false;
 
-$("#submit_btn").mouseenter(function() { 
+$("#submit_btn").on("click", function() { 
 
 		has_errors = false;
 		var alpha_regex = /^[a-zA-Z]+$/;
