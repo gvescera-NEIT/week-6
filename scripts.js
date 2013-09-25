@@ -118,8 +118,3 @@ $("#submit_btn").on("click", function() {
 
 	}
 	);
-
-function checkform()
-	{
-
-	}
