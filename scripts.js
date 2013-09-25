@@ -94,6 +94,12 @@ $("#submit_btn").on("click", function() {
 			err_messagebox.innerHTML = "";
 		}
 
+
+	}
+	);
+
+function checkform()
+	{
 		// Variables are declared for the confirmation screen
 		var firstname_results = "";
 		var lastname_results = "";
@@ -115,10 +121,4 @@ $("#submit_btn").on("click", function() {
 		confirmation_div.style.display = "block";		
 		con_results.innerHTML = "<div align=left><ul><li>" + firstname_results + "</li>" + "<li>" + lastname_results + "</li>" + "<li>" + email_results + "</li>" + "<li>" + message_results + "</li>" + "</ul></div>";
 		}
-	}
-	);
-
-function checkform()
-	{
-
 	}
