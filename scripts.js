@@ -26,9 +26,8 @@ $("#submit_btn").on("click", function() {
 		}
 		else if (alpha_regex.test(firstname.value) == false)
 		{
-			alert("First name must only contain letters");
 			document.getElementById("firstname").className="novalue";
-			err_firstname.innerHTML = "*";
+			err_firstname.innerHTML = "*First name must only contain letters";
 			has_errors = true;
 		}
 		else if (firstname.value.length > 0 && alpha_regex.test(firstname.value) == true)
@@ -45,9 +44,8 @@ $("#submit_btn").on("click", function() {
 		}
 		else if (spacealpha_regex.test(lastname.value) == false)
 		{
-			alert("Last name must only contain letters");
 			document.getElementById("lastname").className="novalue";
-			err_lastname.innerHTML = "*";
+			err_lastname.innerHTML = "*Last name must only contain letters";
 			has_errors = true;
 		}
 		else if (lastname.value.length > 0 && spacealpha_regex.test(lastname.value) == true)
@@ -64,9 +62,8 @@ $("#submit_btn").on("click", function() {
 		}
 		else if (email_regex.test(email.value) == false)
 		{
-			alert("Email cannot begin with a number and must contain an \"@\" and a \".\"");
 			document.getElementById("email").className="novalue";
-			err_email.innerHTML = "*";
+			err_email.innerHTML = "*Email cannot begin with a number and must contain an \"@\" and a \".\"";
 			has_errors = true;
 		}
 		else if (email.value.length > 0 && email_regex.test(email.value) == true)
@@ -84,8 +81,7 @@ $("#submit_btn").on("click", function() {
 		else if (messagebox.value.length > 150)
 		{
 			document.getElementById("messagebox").className="novalue";
-			err_messagebox.innerHTML = "*";
-			alert("Max message length is 150 characters");
+			err_messagebox.innerHTML = "*Max message length is 150 characters";
 			has_errors = true;
 		}
 //		else if (hack_protect_regex.test(messagebox.value) == false)
