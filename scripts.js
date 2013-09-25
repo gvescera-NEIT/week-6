@@ -7,7 +7,7 @@ var err_firstname = document.getElementById("err_firstname");
 var err_lastname = document.getElementById("err_lastname");
 var err_email = document.getElementById("err_email");
 var err_messagebox = document.getElementById("err_messagebox");
-var has_errors = false;
+var has_errors = true;
 
 $("#submit_btn").on("click", function() { 
 
@@ -93,13 +93,7 @@ $("#submit_btn").on("click", function() {
 			document.getElementById("messagebox").className="";
 			err_messagebox.innerHTML = "";
 		}
-
-
-	}
-	);
-
-function checkform()
-	{
+		
 		// Variables are declared for the confirmation screen
 		var firstname_results = "";
 		var lastname_results = "";
@@ -121,4 +115,11 @@ function checkform()
 		confirmation_div.style.display = "block";		
 		con_results.innerHTML = "<div align=left><ul><li>" + firstname_results + "</li>" + "<li>" + lastname_results + "</li>" + "<li>" + email_results + "</li>" + "<li>" + message_results + "</li>" + "</ul></div>";
 		}
+
+	}
+	);
+
+function checkform()
+	{
+
 	}
