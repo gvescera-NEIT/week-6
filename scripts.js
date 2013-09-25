@@ -103,7 +103,7 @@ $("#submit_btn").on("click", function() {
 		var con_results = document.getElementById("con_results");
 
 		// Only displays confirmation screen if there are no errors
-		if (!has_errors)
+		if (has_errors == false)
 		{
 		firstname_results += "First Name: " + firstname.value;
 		lastname_results += "Last Name: " + lastname.value;
