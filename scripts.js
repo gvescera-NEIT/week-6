@@ -7,7 +7,7 @@ var err_firstname = document.getElementById("err_firstname");
 var err_lastname = document.getElementById("err_lastname");
 var err_email = document.getElementById("err_email");
 var err_messagebox = document.getElementById("err_messagebox");
-var has_errors = true;
+var has_errors = false;
 
 $("#submit_btn").on("click", function() { 
 
