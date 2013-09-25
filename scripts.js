@@ -11,7 +11,7 @@ var has_errors = true;
 
 $("#submit_btn").on("click", function() { 
 
-		has_errors = false;
+
 		var alpha_regex = /^[a-zA-Z]+$/;
 		var spacealpha_regex = /^([^ ])([a-zA-Z ])+$/;
 		var email_regex = /^([a-zA-Z])([a-zA-Z0-9.]*)([@])([a-zA-Z]+)([.])([a-z]{3})$/;
